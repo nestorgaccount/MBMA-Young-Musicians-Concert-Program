@@ -110,16 +110,23 @@ MBMA, Parents, Staff, and Families of our Young Musicians <br>
     <footer>
         <p> 2026 MBMA Young Musicians Spring Concert </p>
     </footer>
-    <audio controls style="display: block; margin: 20px auto;"> 
+    <div class="audio-player">
+  <h3 id="track-title">Loading...</h3>
+  
+  <!-- Audio element -->
+  <audio id="audio-player"></audio>
 
-  <source src="https://github.com/nestorgaccount/MBMA-Young-Musicians-Concert-Program/blob/main/01%20Audio%20Track.mp3" type="audio/mpeg">
- <audio controls style="display: block; margin: 20px auto;"> 
+  <!-- Controls -->
+  <div class="controls">
+    <button id="prev-btn">⏮ Prev</button>
+    <button id="play-pause-btn">▶ Play</button>
+    <button id="next-btn">Next ⏭</button>
+  </div>
 
-  <source src="https://github.com/nestorgaccount/MBMA-Young-Musicians-Concert-Program/blob/main/01%20Audio%20Track.mp3" type="audio/mpeg">
- <audio controls style="display: block; margin: 20px auto;"> 
-
-  <source src="https://github.com/nestorgaccount/MBMA-Young-Musicians-Concert-Program/blob/main/01%20Audio%20Track.mp3" type="audio/mpeg">
-
-
+  <!-- Playlist -->
+  <ul id="playlist">
+    <!-- Tracks will be injected by JavaScript -->
+  </ul>
+</div>
 </body>
 </html> 
